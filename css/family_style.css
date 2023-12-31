@@ -1,0 +1,45 @@
+table,tr, th, td
+		{
+			border: 2px solid blue;
+			border-collapse: collapse;
+		}
+
+		table
+		{
+			width: 500px;
+		}
+		
+		th
+		{
+			text-align: center;
+			background-color: palevioletred;
+			color: mistyrose;
+		}
+
+		tr
+		{
+			text-family: bold;
+			color: midnightblue;
+			background-color: mediumpurple;
+		}
+
+		td
+		{
+			text-align: center;
+		}
+
+		tr:nth-child(even)
+		{
+			background-color: lightsteelblue;
+		}
+		
+		tr:nth-child(odd)
+		{
+			background-color: lightgrey;
+		}
+
+		tr:hover
+		{
+			background-color: lightsalmon;
+		}
+

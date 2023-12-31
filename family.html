@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Family Page</title>
+
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+.menu {
+  float: left;
+  width: 15%;
+  text-align: center;
+}
+
+.menu a {
+  background-color: whitesmoke;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+.main {
+  float: left;
+  width: 85%;
+  padding: 0 20px;
+  color: mediumvioletred;
+}
+
+
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+
+  <link rel="stylesheet" type="text/css" href="css/index_style.css">
+  <link rel="stylesheet" type="text/css" href="css/family_style.css">
+
+</head>
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+  <header>
+  <iframe src="https://free.timeanddate.com/clock/i96dkxou/n122/fn6/fs16/tcff9/pct/ftb/bas2/bac99f/pa8/tt0/tw1/tm1/th1/ta1/tb4" frameborder="0" width="166" height="60" allowtransparency="true" align="right"></iframe>
+  </header>
+
+<div style="background-color:plum; padding:5px; text-align:center;">
+  <h1>Welcome To My Website</h1>
+</div>
+
+<br>
+
+<div style="overflow:auto">
+
+
+  <div class="menu">
+  <button><a href="index.html">HOME PAGE</a></button><br>
+  <button><a href="education.html">EDUCATION</a></button><br>
+  <button><a href="experience.html">EXPERIENCE</a></button><br>
+  <button><a href="family.html">FAMILY</a></button><br>
+  <button><a href="gallery.html">GALLERY</a></button><br>
+  <button><a href="contact.html">CONTACT ME</a></button><br>
+  </div>
+
+  <div class="main">
+    
+    <h2>My Family</h2>
+
+    <hr>
+
+    <br>
+
+    <center>
+    <script> 
+    function family(a)
+    {
+      var pic;
+      if (a==2)
+      {
+        pic="images/myfamily.jpg"
+      }
+      else
+      {
+        pic="images/bigfamily.jpg"
+      }
+      document.getElementById('gambar').src=pic;
+    }
+  </script>
+
+
+  <img src="images/myfamily.jpg" id="gambar" width="500" height="300">
+
+  <p>
+    <button type="button" onclick="family(1)">Big Family</button>
+    <button type="button" onclick="family(2)">My Family</button>
+  </p>
+  </center>
+
+  <hr>
+
+  
+<center>
+
+<table style="width: 100%">
+  <tr>
+    <th>FAMILY MEMBERS</th>
+    <th>BIODATA</th>
+    <th>IMAGE</th>
+  </tr>
+
+  <tr>
+    <td>Azuwan Bin Ab Rahman</td>
+    <td>Father</td>
+    <td rowspan="2"><img src="images/mamapapa.jpg" style="width: 200px; height: 300px;"></td>
+  </tr>
+
+  <tr>
+    <td>Siti Zubaidah Binti Jusoh</td>
+    <td>Mother</td>
+  </tr>
+
+  <tr>
+    <td>Nurul Shafiqah Najwa Binti Azuwan</td>
+    <td>Eldest/First (Me)</td>
+    <td><img src="images/one.jpg" style="width: 200px; height: 200px;"></td>
+  </tr>
+
+  <tr>
+    <td>Nor Saiful Hafizi Bin Azuwan</td>
+    <td>Second</td>
+    <td><img src="images/angah.jpg" style="width: 200px; height: 200px;"></td>
+  </tr>
+
+  <tr>
+    <td>Nor Saiful Hakimi Bin Azuwan</td>
+    <td>Third</td>
+    <td><img src="images/acik.jpg" style="width: 200px; height: 200px;"></td>
+  </tr>
+
+  <tr>
+    <td>Nor Saiful Hazim Bin Azuwan</td>
+    <td>Fourth/Youngest</td>
+    <td><img src="images/adik.jpg" style="width: 200px; height: 200px;"></td>
+  </tr>
+
+</table>
+</center>
+</p>
+
+  </div>
+
+</div>
+
+<div style="background-color:plum; text-align:center; padding:10px; margin-top:7px; color: darkmagenta;">© copyright nurulshafiqahnajwa</div>
+
+</body>
+</html>
